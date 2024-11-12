@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.easyshare.dao.UserDataDao">
+    <resultMap id="userDataVoMap" type="UserDataVo">
+        <result property="userId" column="user_id" />
+        <result property="fansCnt" column="fans_cnt" />
+        <result property="followsCnt" column="follows_cnt" />
+    </resultMap>
+
+    <insert id="addUserData">
+        INSERT INTO `tb_user_data` (user_id, last_update)
+        VALUES (#{userId}, #{lastUpdate})
+    </insert>
+
+    <select id="findUserData" resultMap="userDataVoMap">
+        SELECT user_id, fans_cnt, follows_cnt
+        FROM `tb_user_data`
+        WHERE user_id = #{userId}
+    </select>
+
+    <update id="incrementFansCnt">
+        UPDATE `tb_user_data`
+        SET fans_cnt = fans_cnt + 1,
+            last_update = #{lastUpdate}
+        WHERE user_id = #{userId}
+    </update>
+
+    <update id="decrementFansCnt">
+        UPDATE `tb_user_data`
+        SET fans_cnt = fans_cnt - 1,
+            last_update = #{lastUpdate}
+        WHERE user_id = #{userId}
+    </update>
+
+    <update id="incrementFollowsCnt">
+        UPDATE `tb_user_data`
+        SET follows_cnt = follows_cnt + 1,
+            last_update = #{lastUpdate}
+        WHERE user_id = #{userId}
+    </update>
+
+    <update id="decrementFollowsCnt">
+        UPDATE `tb_user_data`
+        SET follows_cnt = follows_cnt - 1,
+            last_update = #{lastUpdate}
+        WHERE user_id = #{userId}
+    </update>
+</mapper>

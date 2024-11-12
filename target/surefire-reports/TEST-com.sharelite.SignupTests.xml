@@ -1,0 +1,1274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.sharelite.SignupTests" time="0.534" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="22"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="D:\Share Lite(react+springboot+electron)\springboot\target\test-classes;D:\Share Lite(react+springboot+electron)\springboot\target\classes;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-web\3.3.3\spring-boot-starter-web-3.3.3.jar;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter\3.3.3\spring-boot-starter-3.3.3.jar;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot\3.3.3\spring-boot-3.3.3.jar;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.3\spring-boot-autoconfigure-3.3.3.jar;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-logging\3.3.3\spring-boot-starter-logging-3.3.3.jar;D:\apache-maven-3.9.9\repository\ch\qos\logback\logback-classic\1.5.7\logback-classic-1.5.7.jar;D:\apache-maven-3.9.9\repository\ch\qos\logback\logback-core\1.5.7\logback-core-1.5.7.jar;D:\apache-maven-3.9.9\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;D:\apache-maven-3.9.9\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;D:\apache-maven-3.9.9\repository\org\slf4j\jul-to-slf4j\2.0.16\jul-to-slf4j-2.0.16.jar;D:\apache-maven-3.9.9\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;D:\apache-maven-3.9.9\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-json\3.3.3\spring-boot-starter-json-3.3.3.jar;D:\apache-maven-3.9.9\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.2\jackson-datatype-jdk8-2.17.2.jar;D:\apache-maven-3.9.9\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2\jackson-datatype-jsr310-2.17.2.jar;D:\apache-maven-3.9.9\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.2\jackson-module-parameter-names-2.17.2.jar;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.3\spring-boot-starter-tomcat-3.3.3.jar;D:\apache-maven-3.9.9\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.28\tomcat-embed-core-10.1.28.jar;D:\apache-maven-3.9.9\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.28\tomcat-embed-websocket-10.1.28.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-web\6.1.12\spring-web-6.1.12.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-beans\6.1.12\spring-beans-6.1.12.jar;D:\apache-maven-3.9.9\repository\io\micrometer\micrometer-observation\1.13.3\micrometer-observation-1.13.3.jar;D:\apache-maven-3.9.9\repository\io\micrometer\micrometer-commons\1.13.3\micrometer-commons-1.13.3.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-webmvc\6.1.12\spring-webmvc-6.1.12.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-aop\6.1.12\spring-aop-6.1.12.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-context\6.1.12\spring-context-6.1.12.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-expression\6.1.12\spring-expression-6.1.12.jar;D:\apache-maven-3.9.9\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;D:\apache-maven-3.9.9\repository\org\projectlombok\lombok\1.18.34\lombok-1.18.34.jar;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-test\3.3.3\spring-boot-starter-test-3.3.3.jar;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-test\3.3.3\spring-boot-test-3.3.3.jar;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.3\spring-boot-test-autoconfigure-3.3.3.jar;D:\apache-maven-3.9.9\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;D:\apache-maven-3.9.9\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;D:\apache-maven-3.9.9\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;D:\apache-maven-3.9.9\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;D:\apache-maven-3.9.9\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;D:\apache-maven-3.9.9\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;D:\apache-maven-3.9.9\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;D:\apache-maven-3.9.9\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;D:\apache-maven-3.9.9\repository\net\bytebuddy\byte-buddy\1.14.19\byte-buddy-1.14.19.jar;D:\apache-maven-3.9.9\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;D:\apache-maven-3.9.9\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;D:\apache-maven-3.9.9\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;D:\apache-maven-3.9.9\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;D:\apache-maven-3.9.9\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;D:\apache-maven-3.9.9\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;D:\apache-maven-3.9.9\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;D:\apache-maven-3.9.9\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;D:\apache-maven-3.9.9\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;D:\apache-maven-3.9.9\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;D:\apache-maven-3.9.9\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;D:\apache-maven-3.9.9\repository\net\bytebuddy\byte-buddy-agent\1.14.19\byte-buddy-agent-1.14.19.jar;D:\apache-maven-3.9.9\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;D:\apache-maven-3.9.9\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;D:\apache-maven-3.9.9\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;D:\apache-maven-3.9.9\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-core\6.1.12\spring-core-6.1.12.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-jcl\6.1.12\spring-jcl-6.1.12.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-test\6.1.12\spring-test-6.1.12.jar;D:\apache-maven-3.9.9\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;D:\apache-maven-3.9.9\repository\org\mybatis\spring\boot\mybatis-spring-boot-starter\3.0.3\mybatis-spring-boot-starter-3.0.3.jar;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.3\spring-boot-starter-jdbc-3.3.3.jar;D:\apache-maven-3.9.9\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-jdbc\6.1.12\spring-jdbc-6.1.12.jar;D:\apache-maven-3.9.9\repository\org\mybatis\spring\boot\mybatis-spring-boot-autoconfigure\3.0.3\mybatis-spring-boot-autoconfigure-3.0.3.jar;D:\apache-maven-3.9.9\repository\org\mybatis\mybatis\3.5.14\mybatis-3.5.14.jar;D:\apache-maven-3.9.9\repository\org\mybatis\mybatis-spring\3.0.3\mybatis-spring-3.0.3.jar;D:\apache-maven-3.9.9\repository\org\mybatis\spring\boot\mybatis-spring-boot-starter-test\3.0.3\mybatis-spring-boot-starter-test-3.0.3.jar;D:\apache-maven-3.9.9\repository\org\mybatis\spring\boot\mybatis-spring-boot-test-autoconfigure\3.0.3\mybatis-spring-boot-test-autoconfigure-3.0.3.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-tx\6.1.12\spring-tx-6.1.12.jar;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-validation\3.3.3\spring-boot-starter-validation-3.3.3.jar;D:\apache-maven-3.9.9\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.28\tomcat-embed-el-10.1.28.jar;D:\apache-maven-3.9.9\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;D:\apache-maven-3.9.9\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;D:\apache-maven-3.9.9\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;D:\apache-maven-3.9.9\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;D:\apache-maven-3.9.9\repository\com\auth0\java-jwt\4.4.0\java-jwt-4.4.0.jar;D:\apache-maven-3.9.9\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;D:\apache-maven-3.9.9\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;D:\apache-maven-3.9.9\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;D:\apache-maven-3.9.9\repository\com\alibaba\fastjson2\fastjson2-extension-spring6\2.0.52\fastjson2-extension-spring6-2.0.52.jar;D:\apache-maven-3.9.9\repository\com\alibaba\fastjson2\fastjson2-extension\2.0.52\fastjson2-extension-2.0.52.jar;D:\apache-maven-3.9.9\repository\com\alibaba\fastjson2\fastjson2\2.0.52\fastjson2-2.0.52.jar;D:\apache-maven-3.9.9\repository\com\github\pagehelper\pagehelper-spring-boot-starter\1.4.7\pagehelper-spring-boot-starter-1.4.7.jar;D:\apache-maven-3.9.9\repository\com\github\pagehelper\pagehelper-spring-boot-autoconfigure\1.4.7\pagehelper-spring-boot-autoconfigure-1.4.7.jar;D:\apache-maven-3.9.9\repository\com\github\pagehelper\pagehelper\5.3.3\pagehelper-5.3.3.jar;D:\apache-maven-3.9.9\repository\com\github\jsqlparser\jsqlparser\4.5\jsqlparser-4.5.jar;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-data-redis\3.3.3\spring-boot-starter-data-redis-3.3.3.jar;D:\apache-maven-3.9.9\repository\io\lettuce\lettuce-core\6.3.2.RELEASE\lettuce-core-6.3.2.RELEASE.jar;D:\apache-maven-3.9.9\repository\io\netty\netty-common\4.1.112.Final\netty-common-4.1.112.Final.jar;D:\apache-maven-3.9.9\repository\io\netty\netty-handler\4.1.112.Final\netty-handler-4.1.112.Final.jar;D:\apache-maven-3.9.9\repository\io\netty\netty-resolver\4.1.112.Final\netty-resolver-4.1.112.Final.jar;D:\apache-maven-3.9.9\repository\io\netty\netty-buffer\4.1.112.Final\netty-buffer-4.1.112.Final.jar;D:\apache-maven-3.9.9\repository\io\netty\netty-transport-native-unix-common\4.1.112.Final\netty-transport-native-unix-common-4.1.112.Final.jar;D:\apache-maven-3.9.9\repository\io\netty\netty-codec\4.1.112.Final\netty-codec-4.1.112.Final.jar;D:\apache-maven-3.9.9\repository\io\netty\netty-transport\4.1.112.Final\netty-transport-4.1.112.Final.jar;D:\apache-maven-3.9.9\repository\io\projectreactor\reactor-core\3.6.9\reactor-core-3.6.9.jar;D:\apache-maven-3.9.9\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;D:\apache-maven-3.9.9\repository\org\springframework\data\spring-data-redis\3.3.3\spring-data-redis-3.3.3.jar;D:\apache-maven-3.9.9\repository\org\springframework\data\spring-data-keyvalue\3.3.3\spring-data-keyvalue-3.3.3.jar;D:\apache-maven-3.9.9\repository\org\springframework\data\spring-data-commons\3.3.3\spring-data-commons-3.3.3.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-oxm\6.1.12\spring-oxm-6.1.12.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-context-support\6.1.12\spring-context-support-6.1.12.jar;D:\apache-maven-3.9.9\repository\com\aliyun\oss\aliyun-sdk-oss\3.17.4\aliyun-sdk-oss-3.17.4.jar;D:\apache-maven-3.9.9\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;D:\apache-maven-3.9.9\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;D:\apache-maven-3.9.9\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;D:\apache-maven-3.9.9\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;D:\apache-maven-3.9.9\repository\org\jdom\jdom2\2.0.6.1\jdom2-2.0.6.1.jar;D:\apache-maven-3.9.9\repository\org\codehaus\jettison\jettison\1.5.4\jettison-1.5.4.jar;D:\apache-maven-3.9.9\repository\com\aliyun\aliyun-java-sdk-core\4.5.10\aliyun-java-sdk-core-4.5.10.jar;D:\apache-maven-3.9.9\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;D:\apache-maven-3.9.9\repository\org\jacoco\org.jacoco.agent\0.8.5\org.jacoco.agent-0.8.5-runtime.jar;D:\apache-maven-3.9.9\repository\org\ini4j\ini4j\0.5.4\ini4j-0.5.4.jar;D:\apache-maven-3.9.9\repository\io\opentracing\opentracing-api\0.33.0\opentracing-api-0.33.0.jar;D:\apache-maven-3.9.9\repository\io\opentracing\opentracing-util\0.33.0\opentracing-util-0.33.0.jar;D:\apache-maven-3.9.9\repository\io\opentracing\opentracing-noop\0.33.0\opentracing-noop-0.33.0.jar;D:\apache-maven-3.9.9\repository\com\aliyun\aliyun-java-sdk-ram\3.1.0\aliyun-java-sdk-ram-3.1.0.jar;D:\apache-maven-3.9.9\repository\com\aliyun\aliyun-java-sdk-kms\2.11.0\aliyun-java-sdk-kms-2.11.0.jar;D:\apache-maven-3.9.9\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;D:\apache-maven-3.9.9\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;D:\apache-maven-3.9.9\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;D:\apache-maven-3.9.9\repository\org\glassfish\jaxb\jaxb-runtime\2.3.3\jaxb-runtime-2.3.3.jar;D:\apache-maven-3.9.9\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;D:\apache-maven-3.9.9\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;D:\apache-maven-3.9.9\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="D:\JDK\bin"/>
+    <property name="sun.java.command" value="C:\Users\LZH\AppData\Local\Temp\surefire8945339324834773607\surefirebooter-20240928190717017_3.jar C:\Users\LZH\AppData\Local\Temp\surefire8945339324834773607 2024-09-28T19-07-16_667-jvmRun1 surefire-20240928190717017_1tmp surefire_0-20240928190717017_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\Share Lite(react+springboot+electron)\springboot\target\test-classes;D:\Share Lite(react+springboot+electron)\springboot\target\classes;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-web\3.3.3\spring-boot-starter-web-3.3.3.jar;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter\3.3.3\spring-boot-starter-3.3.3.jar;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot\3.3.3\spring-boot-3.3.3.jar;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.3\spring-boot-autoconfigure-3.3.3.jar;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-logging\3.3.3\spring-boot-starter-logging-3.3.3.jar;D:\apache-maven-3.9.9\repository\ch\qos\logback\logback-classic\1.5.7\logback-classic-1.5.7.jar;D:\apache-maven-3.9.9\repository\ch\qos\logback\logback-core\1.5.7\logback-core-1.5.7.jar;D:\apache-maven-3.9.9\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;D:\apache-maven-3.9.9\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;D:\apache-maven-3.9.9\repository\org\slf4j\jul-to-slf4j\2.0.16\jul-to-slf4j-2.0.16.jar;D:\apache-maven-3.9.9\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;D:\apache-maven-3.9.9\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-json\3.3.3\spring-boot-starter-json-3.3.3.jar;D:\apache-maven-3.9.9\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.2\jackson-datatype-jdk8-2.17.2.jar;D:\apache-maven-3.9.9\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2\jackson-datatype-jsr310-2.17.2.jar;D:\apache-maven-3.9.9\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.2\jackson-module-parameter-names-2.17.2.jar;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.3\spring-boot-starter-tomcat-3.3.3.jar;D:\apache-maven-3.9.9\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.28\tomcat-embed-core-10.1.28.jar;D:\apache-maven-3.9.9\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.28\tomcat-embed-websocket-10.1.28.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-web\6.1.12\spring-web-6.1.12.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-beans\6.1.12\spring-beans-6.1.12.jar;D:\apache-maven-3.9.9\repository\io\micrometer\micrometer-observation\1.13.3\micrometer-observation-1.13.3.jar;D:\apache-maven-3.9.9\repository\io\micrometer\micrometer-commons\1.13.3\micrometer-commons-1.13.3.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-webmvc\6.1.12\spring-webmvc-6.1.12.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-aop\6.1.12\spring-aop-6.1.12.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-context\6.1.12\spring-context-6.1.12.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-expression\6.1.12\spring-expression-6.1.12.jar;D:\apache-maven-3.9.9\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;D:\apache-maven-3.9.9\repository\org\projectlombok\lombok\1.18.34\lombok-1.18.34.jar;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-test\3.3.3\spring-boot-starter-test-3.3.3.jar;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-test\3.3.3\spring-boot-test-3.3.3.jar;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.3\spring-boot-test-autoconfigure-3.3.3.jar;D:\apache-maven-3.9.9\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;D:\apache-maven-3.9.9\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;D:\apache-maven-3.9.9\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;D:\apache-maven-3.9.9\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;D:\apache-maven-3.9.9\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;D:\apache-maven-3.9.9\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;D:\apache-maven-3.9.9\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;D:\apache-maven-3.9.9\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;D:\apache-maven-3.9.9\repository\net\bytebuddy\byte-buddy\1.14.19\byte-buddy-1.14.19.jar;D:\apache-maven-3.9.9\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;D:\apache-maven-3.9.9\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;D:\apache-maven-3.9.9\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;D:\apache-maven-3.9.9\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;D:\apache-maven-3.9.9\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;D:\apache-maven-3.9.9\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;D:\apache-maven-3.9.9\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;D:\apache-maven-3.9.9\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;D:\apache-maven-3.9.9\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;D:\apache-maven-3.9.9\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;D:\apache-maven-3.9.9\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;D:\apache-maven-3.9.9\repository\net\bytebuddy\byte-buddy-agent\1.14.19\byte-buddy-agent-1.14.19.jar;D:\apache-maven-3.9.9\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;D:\apache-maven-3.9.9\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;D:\apache-maven-3.9.9\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;D:\apache-maven-3.9.9\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-core\6.1.12\spring-core-6.1.12.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-jcl\6.1.12\spring-jcl-6.1.12.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-test\6.1.12\spring-test-6.1.12.jar;D:\apache-maven-3.9.9\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;D:\apache-maven-3.9.9\repository\org\mybatis\spring\boot\mybatis-spring-boot-starter\3.0.3\mybatis-spring-boot-starter-3.0.3.jar;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.3\spring-boot-starter-jdbc-3.3.3.jar;D:\apache-maven-3.9.9\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-jdbc\6.1.12\spring-jdbc-6.1.12.jar;D:\apache-maven-3.9.9\repository\org\mybatis\spring\boot\mybatis-spring-boot-autoconfigure\3.0.3\mybatis-spring-boot-autoconfigure-3.0.3.jar;D:\apache-maven-3.9.9\repository\org\mybatis\mybatis\3.5.14\mybatis-3.5.14.jar;D:\apache-maven-3.9.9\repository\org\mybatis\mybatis-spring\3.0.3\mybatis-spring-3.0.3.jar;D:\apache-maven-3.9.9\repository\org\mybatis\spring\boot\mybatis-spring-boot-starter-test\3.0.3\mybatis-spring-boot-starter-test-3.0.3.jar;D:\apache-maven-3.9.9\repository\org\mybatis\spring\boot\mybatis-spring-boot-test-autoconfigure\3.0.3\mybatis-spring-boot-test-autoconfigure-3.0.3.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-tx\6.1.12\spring-tx-6.1.12.jar;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-validation\3.3.3\spring-boot-starter-validation-3.3.3.jar;D:\apache-maven-3.9.9\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.28\tomcat-embed-el-10.1.28.jar;D:\apache-maven-3.9.9\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;D:\apache-maven-3.9.9\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;D:\apache-maven-3.9.9\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;D:\apache-maven-3.9.9\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;D:\apache-maven-3.9.9\repository\com\auth0\java-jwt\4.4.0\java-jwt-4.4.0.jar;D:\apache-maven-3.9.9\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;D:\apache-maven-3.9.9\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;D:\apache-maven-3.9.9\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;D:\apache-maven-3.9.9\repository\com\alibaba\fastjson2\fastjson2-extension-spring6\2.0.52\fastjson2-extension-spring6-2.0.52.jar;D:\apache-maven-3.9.9\repository\com\alibaba\fastjson2\fastjson2-extension\2.0.52\fastjson2-extension-2.0.52.jar;D:\apache-maven-3.9.9\repository\com\alibaba\fastjson2\fastjson2\2.0.52\fastjson2-2.0.52.jar;D:\apache-maven-3.9.9\repository\com\github\pagehelper\pagehelper-spring-boot-starter\1.4.7\pagehelper-spring-boot-starter-1.4.7.jar;D:\apache-maven-3.9.9\repository\com\github\pagehelper\pagehelper-spring-boot-autoconfigure\1.4.7\pagehelper-spring-boot-autoconfigure-1.4.7.jar;D:\apache-maven-3.9.9\repository\com\github\pagehelper\pagehelper\5.3.3\pagehelper-5.3.3.jar;D:\apache-maven-3.9.9\repository\com\github\jsqlparser\jsqlparser\4.5\jsqlparser-4.5.jar;D:\apache-maven-3.9.9\repository\org\springframework\boot\spring-boot-starter-data-redis\3.3.3\spring-boot-starter-data-redis-3.3.3.jar;D:\apache-maven-3.9.9\repository\io\lettuce\lettuce-core\6.3.2.RELEASE\lettuce-core-6.3.2.RELEASE.jar;D:\apache-maven-3.9.9\repository\io\netty\netty-common\4.1.112.Final\netty-common-4.1.112.Final.jar;D:\apache-maven-3.9.9\repository\io\netty\netty-handler\4.1.112.Final\netty-handler-4.1.112.Final.jar;D:\apache-maven-3.9.9\repository\io\netty\netty-resolver\4.1.112.Final\netty-resolver-4.1.112.Final.jar;D:\apache-maven-3.9.9\repository\io\netty\netty-buffer\4.1.112.Final\netty-buffer-4.1.112.Final.jar;D:\apache-maven-3.9.9\repository\io\netty\netty-transport-native-unix-common\4.1.112.Final\netty-transport-native-unix-common-4.1.112.Final.jar;D:\apache-maven-3.9.9\repository\io\netty\netty-codec\4.1.112.Final\netty-codec-4.1.112.Final.jar;D:\apache-maven-3.9.9\repository\io\netty\netty-transport\4.1.112.Final\netty-transport-4.1.112.Final.jar;D:\apache-maven-3.9.9\repository\io\projectreactor\reactor-core\3.6.9\reactor-core-3.6.9.jar;D:\apache-maven-3.9.9\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;D:\apache-maven-3.9.9\repository\org\springframework\data\spring-data-redis\3.3.3\spring-data-redis-3.3.3.jar;D:\apache-maven-3.9.9\repository\org\springframework\data\spring-data-keyvalue\3.3.3\spring-data-keyvalue-3.3.3.jar;D:\apache-maven-3.9.9\repository\org\springframework\data\spring-data-commons\3.3.3\spring-data-commons-3.3.3.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-oxm\6.1.12\spring-oxm-6.1.12.jar;D:\apache-maven-3.9.9\repository\org\springframework\spring-context-support\6.1.12\spring-context-support-6.1.12.jar;D:\apache-maven-3.9.9\repository\com\aliyun\oss\aliyun-sdk-oss\3.17.4\aliyun-sdk-oss-3.17.4.jar;D:\apache-maven-3.9.9\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;D:\apache-maven-3.9.9\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;D:\apache-maven-3.9.9\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;D:\apache-maven-3.9.9\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;D:\apache-maven-3.9.9\repository\org\jdom\jdom2\2.0.6.1\jdom2-2.0.6.1.jar;D:\apache-maven-3.9.9\repository\org\codehaus\jettison\jettison\1.5.4\jettison-1.5.4.jar;D:\apache-maven-3.9.9\repository\com\aliyun\aliyun-java-sdk-core\4.5.10\aliyun-java-sdk-core-4.5.10.jar;D:\apache-maven-3.9.9\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;D:\apache-maven-3.9.9\repository\org\jacoco\org.jacoco.agent\0.8.5\org.jacoco.agent-0.8.5-runtime.jar;D:\apache-maven-3.9.9\repository\org\ini4j\ini4j\0.5.4\ini4j-0.5.4.jar;D:\apache-maven-3.9.9\repository\io\opentracing\opentracing-api\0.33.0\opentracing-api-0.33.0.jar;D:\apache-maven-3.9.9\repository\io\opentracing\opentracing-util\0.33.0\opentracing-util-0.33.0.jar;D:\apache-maven-3.9.9\repository\io\opentracing\opentracing-noop\0.33.0\opentracing-noop-0.33.0.jar;D:\apache-maven-3.9.9\repository\com\aliyun\aliyun-java-sdk-ram\3.1.0\aliyun-java-sdk-ram-3.1.0.jar;D:\apache-maven-3.9.9\repository\com\aliyun\aliyun-java-sdk-kms\2.11.0\aliyun-java-sdk-kms-2.11.0.jar;D:\apache-maven-3.9.9\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;D:\apache-maven-3.9.9\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;D:\apache-maven-3.9.9\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;D:\apache-maven-3.9.9\repository\org\glassfish\jaxb\jaxb-runtime\2.3.3\jaxb-runtime-2.3.3.jar;D:\apache-maven-3.9.9\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;D:\apache-maven-3.9.9\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;D:\apache-maven-3.9.9\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\LZH"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="D:\JDK"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Share Lite(react+springboot+electron)\springboot"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\LZH\AppData\Local\Temp\surefire8945339324834773607\surefirebooter-20240928190717017_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="22.0.2+9-70"/>
+    <property name="user.name" value="LZH"/>
+    <property name="stdout.encoding" value="GBK"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="D:\apache-maven-3.9.9\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\LZH\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2024.2.0.1"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="22.0.2"/>
+    <property name="user.dir" value="D:\Share Lite(react+springboot+electron)\springboot"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="8456"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="GBK"/>
+    <property name="java.library.path" value="D:\JDK\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;E:\python3.6.8\Scripts\;E:\python3.6.8\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;E:\texlive\2022\bin\win32;C:\Program Files\python;C:\Program Files\python\Scripts;D:\BtSoft\panel\script;C:\Program Files\python;C:\Program Files\python\Scripts;D:\BtSoft\panel\script;E:\anaconda3;E:\anaconda3\Scripts\;E:\anaconda3\Library\bin;E:\anaconda3\Library\mingw-w64\bin;E:\python3.12.0;C:\ProgramData\chocolatey\bin;%NODE_HOME%;%NODE_HOME%\node_global;%NODE_HOME%\node_cache;E:\nodejs\;E:\nodejs\node_global\node_modules;D:\JDK\bin;D:\JDK\jre\bin;D:\apache-maven-3.9.9\bin;E:\Git\cmd;E:\TortoiseGit\bin;E:\Redis\;E:\python3.8.3\Scripts\;E:\python3.8.3\;E:\Scripts\;E:\;C:\Users\LZH\AppData\Local\Microsoft\WindowsApps;C:\Compiler\texlive\2020\bin\win32;C:\Program Files\JetBrains\PyCharm Community Edition 2023.2.1\bin;;E:\PyCharm 2024.1.4\bin;;D:\TCGA;F:\TCGA\gdc-client_v1.6.1_Windows_x64;E:\PhpStorm 2024.1.4\bin;;E:\Notepad++;E:\nodejs\node_global;;D:\IntelliJ IDEA 2024.2.0.1\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="GBK"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="22.0.2+9-70"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="maven.repo.local" value="D:\apache-maven-3.9.9\repository"/>
+    <property name="java.class.version" value="66.0"/>
+  </properties>
+  <testcase name="signupTest" classname="com.sharelite.SignupTests" time="0.518">
+    <system-out><![CDATA[2024-09-28T19:07:47.520+08:00  INFO 8456 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.sharelite.SignupTests]: SignupTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-28T19:07:47.525+08:00  INFO 8456 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.sharelite.ShareLiteApplication for test class com.sharelite.SignupTests
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e2ee637]
+JDBC Connection [HikariProxyConnection@50470449 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: FlexiBoy67(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 1, FlexiBoy67, FlexiBoy67@test.com, 98ce6a20ae07bba22d1a049fe36aa295, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e2ee637]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e2ee637]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e2ee637]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e2ee637]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c54d0dc]
+JDBC Connection [HikariProxyConnection@2088038218 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: StarLight12(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 2, StarLight12, StarLight12@test.com, d60a515acb6c218c9090a89e9f5e7cc8, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c54d0dc]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c54d0dc]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c54d0dc]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c54d0dc]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1ec96512]
+JDBC Connection [HikariProxyConnection@1716876539 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: HappyCamper9(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 3, HappyCamper9, HappyCamper9@test.com, 4b06ba3ad38f0e4c24221f0440212974, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1ec96512]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1ec96512]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1ec96512]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1ec96512]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b83ec49]
+JDBC Connection [HikariProxyConnection@496112231 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: TechnoGeek42(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 4, TechnoGeek42, TechnoGeek42@test.com, bcce82c40971a86560177402cd919bf4, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b83ec49]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b83ec49]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b83ec49]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b83ec49]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@684a34f4]
+JDBC Connection [HikariProxyConnection@1600154294 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: SwiftRider88(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 5, SwiftRider88, SwiftRider88@test.com, 6cbb97e8eafceb7df28958d064fd3100, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@684a34f4]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@684a34f4]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@684a34f4]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@684a34f4]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@198a653]
+JDBC Connection [HikariProxyConnection@1836058082 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: SunnyDay2001(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 6, SunnyDay2001, SunnyDay2001@test.com, 3f4f521703099abfd740d9a30cc9b6fe, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@198a653]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@198a653]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@198a653]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@198a653]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77cd1f67]
+JDBC Connection [HikariProxyConnection@1685926521 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: CoolCat777(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 7, CoolCat777, CoolCat777@test.com, 2b56f6ca174dd0512baa54df944c982c, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77cd1f67]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77cd1f67]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77cd1f67]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77cd1f67]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54b313d6]
+JDBC Connection [HikariProxyConnection@723569389 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: MusicLover45(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 8, MusicLover45, MusicLover45@test.com, 86218cb6246d1126bb4b9877293b4f9a, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54b313d6]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54b313d6]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54b313d6]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54b313d6]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c1f3125]
+JDBC Connection [HikariProxyConnection@1777016611 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: DreamChaser19(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 9, DreamChaser19, DreamChaser19@test.com, 7b52be09fdaacc2f102bf396616ab9f5, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c1f3125]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c1f3125]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c1f3125]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c1f3125]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29897daf]
+JDBC Connection [HikariProxyConnection@1380336958 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: FireFly321(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 10, FireFly321, FireFly321@test.com, e81cc90131fd2f13cf2642ee43310bc6, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29897daf]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29897daf]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29897daf]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29897daf]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b19ee18]
+JDBC Connection [HikariProxyConnection@1650055072 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: SilverSurfer2(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 11, SilverSurfer2, SilverSurfer2@test.com, 935c607e3c6741b6ff202c2652c2be4b, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b19ee18]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b19ee18]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b19ee18]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b19ee18]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@33aa4326]
+JDBC Connection [HikariProxyConnection@770563700 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: SpaceCadet69(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 12, SpaceCadet69, SpaceCadet69@test.com, 4332690ed3e45be86560f86420fe9a73, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@33aa4326]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@33aa4326]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@33aa4326]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@33aa4326]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43600de0]
+JDBC Connection [HikariProxyConnection@778039764 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: LuckyCharm8(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 13, LuckyCharm8, LuckyCharm8@test.com, 213847d0a0cbea11a4b10b83d22928fa, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43600de0]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43600de0]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43600de0]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43600de0]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59da4992]
+JDBC Connection [HikariProxyConnection@1908591398 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: WindChiller07(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 14, WindChiller07, WindChiller07@test.com, f286f52e639020e20f43365f5f973277, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59da4992]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59da4992]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59da4992]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59da4992]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5220e6ff]
+JDBC Connection [HikariProxyConnection@122759375 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: EarthAngel33(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 15, EarthAngel33, EarthAngel33@test.com, 15d954be063ee6f28f5a71f0b53c3807, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5220e6ff]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5220e6ff]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5220e6ff]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5220e6ff]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@668ea404]
+JDBC Connection [HikariProxyConnection@1645253408 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: BlueSky1234(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 16, BlueSky1234, BlueSky1234@test.com, 96af29cc7f905d3fa418d98633814d58, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@668ea404]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@668ea404]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@668ea404]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@668ea404]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@276b68af]
+JDBC Connection [HikariProxyConnection@1667637191 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: SuperStar99(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 17, SuperStar99, SuperStar99@test.com, e5dbbe91dc28f6a3e4052250a9a23c4d, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@276b68af]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@276b68af]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@276b68af]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@276b68af]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19412eef]
+JDBC Connection [HikariProxyConnection@132158154 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: BrightEyes56(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 18, BrightEyes56, BrightEyes56@test.com, c382822e2cd869a22b4b8edacfa598f3, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19412eef]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19412eef]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19412eef]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19412eef]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a4f15bc]
+JDBC Connection [HikariProxyConnection@1679944167 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: WaterDrop78(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 19, WaterDrop78, WaterDrop78@test.com, cf4df1a685ab585a33760235f8e4ca50, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a4f15bc]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a4f15bc]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a4f15bc]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a4f15bc]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@475b796d]
+JDBC Connection [HikariProxyConnection@1774713748 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: WildFlower02(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 20, WildFlower02, WildFlower02@test.com, 045716afe5027edf9b2774c93007c1ec, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@475b796d]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@475b796d]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@475b796d]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@475b796d]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bca98d5]
+JDBC Connection [HikariProxyConnection@1030925290 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: GoldenLeaf4(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 21, GoldenLeaf4, GoldenLeaf4@test.com, 9c2ec7880594ac36c8db7551c34125bb, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bca98d5]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bca98d5]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bca98d5]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bca98d5]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45ea6c24]
+JDBC Connection [HikariProxyConnection@2037830530 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: SkyRocket31(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 22, SkyRocket31, SkyRocket31@test.com, 5c0a19813265d336e7f89014e4a916a4, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45ea6c24]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45ea6c24]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45ea6c24]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45ea6c24]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4feea86f]
+JDBC Connection [HikariProxyConnection@1233973724 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: SugarGlider6(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 23, SugarGlider6, SugarGlider6@test.com, ab49dd63b575fc8946947a7d8ab6f92e, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4feea86f]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4feea86f]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4feea86f]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4feea86f]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@318beab4]
+JDBC Connection [HikariProxyConnection@1468302269 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: MoonBeam888(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 24, MoonBeam888, MoonBeam888@test.com, 0a2b7d2a88c6cde7faa5fc2d019fa14b, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@318beab4]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@318beab4]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@318beab4]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@318beab4]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56f4f385]
+JDBC Connection [HikariProxyConnection@418472732 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: MagicWand55(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 25, MagicWand55, MagicWand55@test.com, d7477e14af7f77e7ff282f0b783a2f68, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56f4f385]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56f4f385]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56f4f385]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56f4f385]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72b4ecb2]
+JDBC Connection [HikariProxyConnection@1451735609 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: RainBow123(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 26, RainBow123, RainBow123@test.com, 3114f99710d2e073f57cfe7109b4356e, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72b4ecb2]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72b4ecb2]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72b4ecb2]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72b4ecb2]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6abbdcde]
+JDBC Connection [HikariProxyConnection@705708158 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: SnowFlake777(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 27, SnowFlake777, SnowFlake777@test.com, 7fb9a371719219624a01f5dba725fbd0, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6abbdcde]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6abbdcde]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6abbdcde]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6abbdcde]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a35efac]
+JDBC Connection [HikariProxyConnection@1491724370 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: SunBurst20(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 28, SunBurst20, SunBurst20@test.com, 0469b0b396d6390feba877c79849e040, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a35efac]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a35efac]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a35efac]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a35efac]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@279e4506]
+JDBC Connection [HikariProxyConnection@1379795356 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: StarGazer44(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 29, StarGazer44, StarGazer44@test.com, ba7053d029b2afe4f8aadf35edb88048, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@279e4506]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@279e4506]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@279e4506]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@279e4506]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49f32bcb]
+JDBC Connection [HikariProxyConnection@945965626 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: CloudDrifter9(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 30, CloudDrifter9, CloudDrifter9@test.com, cd80568fa704538b2ad12d1df5d3e666, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49f32bcb]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49f32bcb]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49f32bcb]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49f32bcb]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@73cdf5f9]
+JDBC Connection [HikariProxyConnection@1475886535 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: NightOwl666(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 31, NightOwl666, NightOwl666@test.com, 10bc6b81dcf1c65740175df38664a554, 2024-09-28 12:17:44, null, 0, 2024-09-28 12:17:44
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@73cdf5f9]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@73cdf5f9]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@73cdf5f9]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@73cdf5f9]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@696d28ee]
+JDBC Connection [HikariProxyConnection@245582109 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: DayDreamer2(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 32, DayDreamer2, DayDreamer2@test.com, fd8385bca7d0e64ee7317cf0f2ba9928, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@696d28ee]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@696d28ee]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@696d28ee]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@696d28ee]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62d72091]
+JDBC Connection [HikariProxyConnection@62415796 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: WaveRunner15(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 33, WaveRunner15, WaveRunner15@test.com, 9c97ba5a72e51474ea8e8397420f3acf, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62d72091]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62d72091]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62d72091]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62d72091]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e2c8622]
+JDBC Connection [HikariProxyConnection@191345497 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: ForestNymph3(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 34, ForestNymph3, ForestNymph3@test.com, ccf9af64773b20a55a506032604ba92b, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e2c8622]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e2c8622]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e2c8622]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e2c8622]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@130bd00e]
+JDBC Connection [HikariProxyConnection@2029851001 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: RockStar88(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 35, RockStar88, RockStar88@test.com, eb4446170e09b44b79ec0444ba61d3ce, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@130bd00e]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@130bd00e]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@130bd00e]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@130bd00e]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e08ed28]
+JDBC Connection [HikariProxyConnection@886499748 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: IceCrystal4(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 36, IceCrystal4, IceCrystal4@test.com, 11e2663f9761458cd042bfcf9a0952b6, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e08ed28]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e08ed28]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e08ed28]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e08ed28]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4822fc53]
+JDBC Connection [HikariProxyConnection@1840794798 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: FireBall999(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 37, FireBall999, FireBall999@test.com, 1a0c95021f0d60023ab87e3b5fa9053e, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4822fc53]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4822fc53]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4822fc53]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4822fc53]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@32aa27a7]
+JDBC Connection [HikariProxyConnection@1938741459 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: WindSong12(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 38, WindSong12, WindSong12@test.com, 665a161cc99c9f35265b011f4b7a2918, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@32aa27a7]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@32aa27a7]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@32aa27a7]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@32aa27a7]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@517fb2c3]
+JDBC Connection [HikariProxyConnection@1776649574 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: EarthQuake7(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 39, EarthQuake7, EarthQuake7@test.com, bc6a2dbecf71d3e58c3198f76ec981fb, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@517fb2c3]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@517fb2c3]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@517fb2c3]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@517fb2c3]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e214d39]
+JDBC Connection [HikariProxyConnection@1135188106 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: LightSpeed56(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 40, LightSpeed56, LightSpeed56@test.com, c1ffbf2bcd3595c501591368aeeb0f5b, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e214d39]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e214d39]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e214d39]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e214d39]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45f32b12]
+JDBC Connection [HikariProxyConnection@1539226083 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: DarkKnight23(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 41, DarkKnight23, DarkKnight23@test.com, baf087cfb6c6d485cdde680bfa604aef, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45f32b12]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45f32b12]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45f32b12]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45f32b12]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@191cf38f]
+JDBC Connection [HikariProxyConnection@52076202 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: SeaBreeze88(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 42, SeaBreeze88, SeaBreeze88@test.com, 64c57ee6ddb17d44d219c0872d4a0abf, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@191cf38f]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@191cf38f]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@191cf38f]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@191cf38f]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67c912d3]
+JDBC Connection [HikariProxyConnection@938043359 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: MountainMan4(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 43, MountainMan4, MountainMan4@test.com, 51414db24dde0927a0a2de67a01e422e, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67c912d3]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67c912d3]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67c912d3]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67c912d3]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@395854dd]
+JDBC Connection [HikariProxyConnection@798836643 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: SpaceWalker1(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 44, SpaceWalker1, SpaceWalker1@test.com, 107b08acb02e0989240d37b886776def, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@395854dd]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@395854dd]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@395854dd]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@395854dd]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67836d4]
+JDBC Connection [HikariProxyConnection@551871103 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: RainBowDash0(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 45, RainBowDash0, RainBowDash0@test.com, 51dcd8a5151598c6a7ddcf8ac216461a, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67836d4]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67836d4]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67836d4]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67836d4]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@715ea64a]
+JDBC Connection [HikariProxyConnection@457951161 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: SnowLeopard7(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 46, SnowLeopard7, SnowLeopard7@test.com, 29ff3c8f5b16101935d80389d014ff37, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@715ea64a]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@715ea64a]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@715ea64a]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@715ea64a]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16bbb59c]
+JDBC Connection [HikariProxyConnection@373085350 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: SunFlower33(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 47, SunFlower33, SunFlower33@test.com, aa470f1d00a4e8a1093793adf3275946, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16bbb59c]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16bbb59c]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16bbb59c]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16bbb59c]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5653429e]
+JDBC Connection [HikariProxyConnection@144744913 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: StarBurst99(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 48, StarBurst99, StarBurst99@test.com, 24635ee1a685d37dc1e21c070ef23d1b, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5653429e]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5653429e]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5653429e]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5653429e]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@215efb16]
+JDBC Connection [HikariProxyConnection@446573627 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: CloudPuff55(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 49, CloudPuff55, CloudPuff55@test.com, f0644811b01b0a95d8f8325f8afa97ba, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@215efb16]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@215efb16]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@215efb16]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@215efb16]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9423344]
+JDBC Connection [HikariProxyConnection@416864887 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: NightMare66(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 50, NightMare66, NightMare66@test.com, ef8ba716ef47bc29a13ab880c50918b1, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9423344]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9423344]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9423344]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9423344]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@486d1868]
+JDBC Connection [HikariProxyConnection@52401871 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: DayBreaker22(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 51, DayBreaker22, DayBreaker22@test.com, be8b496de6257db090e9b9e216ff3a97, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@486d1868]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@486d1868]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@486d1868]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@486d1868]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d4b0a07]
+JDBC Connection [HikariProxyConnection@1761528165 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: WaveCrasher1(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 52, WaveCrasher1, WaveCrasher1@test.com, e68bc9b6bf3e95c59ed5453cf70ee2d8, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d4b0a07]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d4b0a07]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d4b0a07]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d4b0a07]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f2bf80d]
+JDBC Connection [HikariProxyConnection@1923018591 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: ForestGuard3(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 53, ForestGuard3, ForestGuard3@test.com, e372ee2249cf149d152bc990e9e4af83, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f2bf80d]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f2bf80d]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f2bf80d]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f2bf80d]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@46c7e6c0]
+JDBC Connection [HikariProxyConnection@39867443 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: RockClimber8(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 54, RockClimber8, RockClimber8@test.com, 6a754585b54007a28c920854aded1681, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@46c7e6c0]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@46c7e6c0]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@46c7e6c0]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@46c7e6c0]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@392af2e0]
+JDBC Connection [HikariProxyConnection@861715645 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: IceDragon44(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 55, IceDragon44, IceDragon44@test.com, 5479ccb554236c4b68c0ad94f2cde85e, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@392af2e0]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@392af2e0]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@392af2e0]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@392af2e0]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a94c8e3]
+JDBC Connection [HikariProxyConnection@42050891 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: FireFlyer9(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 56, FireFlyer9, FireFlyer9@test.com, bb4fdccf1712ec2c6bf0b098aeac712b, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a94c8e3]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a94c8e3]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a94c8e3]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a94c8e3]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@763a72da]
+JDBC Connection [HikariProxyConnection@1606903090 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: WindChaser18(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 57, WindChaser18, WindChaser18@test.com, 22eae215c63f603592ba10bbdbafa973, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@763a72da]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@763a72da]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@763a72da]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@763a72da]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@baf87a5]
+JDBC Connection [HikariProxyConnection@641975103 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: EarthShaker77(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 58, EarthShaker77, EarthShaker77@test.com, 7b09603bb8ef2e129079517b2d7e2188, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@baf87a5]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@baf87a5]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@baf87a5]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@baf87a5]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bfaff23]
+JDBC Connection [HikariProxyConnection@2136509382 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: LightningBolt6(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 59, LightningBolt6, LightningBolt6@test.com, 36ee2e919799d3a6840e880aa7f8bdb2, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bfaff23]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bfaff23]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bfaff23]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bfaff23]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21b75073]
+JDBC Connection [HikariProxyConnection@179379830 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: DarkAngel2(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 60, DarkAngel2, DarkAngel2@test.com, 965c3d4ddd4796baf3a296c52c6f0e3e, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21b75073]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21b75073]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21b75073]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21b75073]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69d6fe75]
+JDBC Connection [HikariProxyConnection@1072154748 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: SeaTurtle88(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 61, SeaTurtle88, SeaTurtle88@test.com, 374a119402b5caf33383450d625385d3, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69d6fe75]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69d6fe75]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69d6fe75]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69d6fe75]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5bbb351e]
+JDBC Connection [HikariProxyConnection@1579492862 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: MountainKing4(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 62, MountainKing4, MountainKing4@test.com, a4e716632e38c50815f401e0e13ea389, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5bbb351e]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5bbb351e]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5bbb351e]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5bbb351e]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b476930]
+JDBC Connection [HikariProxyConnection@1987239290 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: SpaceAce11(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 63, SpaceAce11, SpaceAce11@test.com, fb33d5ff57ac1664734b4f0dbc61bc0a, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b476930]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b476930]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b476930]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b476930]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a80ebcd]
+JDBC Connection [HikariProxyConnection@1662807796 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: RainDrop007(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 64, RainDrop007, RainDrop007@test.com, de5acc02d815128b28001f315d81be25, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a80ebcd]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a80ebcd]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a80ebcd]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a80ebcd]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4446e1d9]
+JDBC Connection [HikariProxyConnection@502661440 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: SnowFlurry77(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 65, SnowFlurry77, SnowFlurry77@test.com, af3a7187b854c432c0f329624aed19d3, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4446e1d9]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4446e1d9]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4446e1d9]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4446e1d9]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11efa76e]
+JDBC Connection [HikariProxyConnection@412731310 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: SunKissed3(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 66, SunKissed3, SunKissed3@test.com, c5e7b8db5fd539cdae238e170a235db2, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11efa76e]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11efa76e]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11efa76e]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11efa76e]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30e734a1]
+JDBC Connection [HikariProxyConnection@306941929 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: StarGazing9(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 67, StarGazing9, StarGazing9@test.com, 0b36c2b49a8e2ebdc81cc5662b41e814, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30e734a1]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30e734a1]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30e734a1]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30e734a1]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e9e7a70]
+JDBC Connection [HikariProxyConnection@2021011079 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: CloudNine5(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 68, CloudNine5, CloudNine5@test.com, b9988f334be7d74b0990550f149fc481, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e9e7a70]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e9e7a70]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e9e7a70]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e9e7a70]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2aacf54b]
+JDBC Connection [HikariProxyConnection@861939497 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: NightHawk6(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 69, NightHawk6, NightHawk6@test.com, 878cc332c0f6a80a4fd5422108086e18, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2aacf54b]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2aacf54b]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2aacf54b]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2aacf54b]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf3bf2e]
+JDBC Connection [HikariProxyConnection@1786221884 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: DayGlow22(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 70, DayGlow22, DayGlow22@test.com, f11898aaf90c35c990312962ae811d9e, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf3bf2e]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf3bf2e]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf3bf2e]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf3bf2e]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a458c73]
+JDBC Connection [HikariProxyConnection@288329615 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: WaveMaster13(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 71, WaveMaster13, WaveMaster13@test.com, b3dba6d40055cb14265783ddd94c5766, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a458c73]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a458c73]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a458c73]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a458c73]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11703cc8]
+JDBC Connection [HikariProxyConnection@49737193 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: ForestNyte33(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 72, ForestNyte33, ForestNyte33@test.com, 510f2422918e6ce75a3a4397077cc290, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11703cc8]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11703cc8]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11703cc8]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11703cc8]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55854382]
+JDBC Connection [HikariProxyConnection@1299158298 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: RockOn888(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 73, RockOn888, RockOn888@test.com, ace42b254f1b6923988b37813d48efa5, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55854382]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55854382]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55854382]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55854382]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ade4ac6]
+JDBC Connection [HikariProxyConnection@1044144931 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: IceQueen4(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 74, IceQueen4, IceQueen4@test.com, 3211b302ae06a618bde620330e855e06, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ade4ac6]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ade4ac6]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ade4ac6]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ade4ac6]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77d0a492]
+JDBC Connection [HikariProxyConnection@1925117845 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: FireStorm99(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 75, FireStorm99, FireStorm99@test.com, b13652012c3002168b3a58cdbc16f741, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77d0a492]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77d0a492]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77d0a492]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77d0a492]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6dcb4f30]
+JDBC Connection [HikariProxyConnection@1920021004 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: WindDancer1(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 76, WindDancer1, WindDancer1@test.com, ce9532cb68fac1b515421fd6a608604e, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6dcb4f30]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6dcb4f30]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6dcb4f30]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6dcb4f30]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36299b83]
+JDBC Connection [HikariProxyConnection@159936195 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: EarthChild7(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 77, EarthChild7, EarthChild7@test.com, ccf6fb628c81638f895f8078a11d7fdf, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36299b83]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36299b83]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36299b83]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36299b83]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15ff247b]
+JDBC Connection [HikariProxyConnection@992155575 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: LightBearer66(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 78, LightBearer66, LightBearer66@test.com, 0a5ceaaaacaa29f389b1031b3fb6b37d, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15ff247b]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15ff247b]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15ff247b]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15ff247b]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a72517e]
+JDBC Connection [HikariProxyConnection@1411151613 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: DarkHunter2(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 79, DarkHunter2, DarkHunter2@test.com, 7da5c3459def45831823c034f30c95cf, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a72517e]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a72517e]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a72517e]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a72517e]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3993cecb]
+JDBC Connection [HikariProxyConnection@1931205834 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: SeaMist8(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 80, SeaMist8, SeaMist8@test.com, 2f56a017ae67119973b2cbcc04a089e7, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3993cecb]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3993cecb]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3993cecb]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3993cecb]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@513fb873]
+JDBC Connection [HikariProxyConnection@119202251 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: MountainMist4(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 81, MountainMist4, MountainMist4@test.com, e89dd225e7ebb3ddd1b2cb87df49619c, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@513fb873]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@513fb873]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@513fb873]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@513fb873]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3380313d]
+JDBC Connection [HikariProxyConnection@492749549 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: SpaceOddity1(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 82, SpaceOddity1, SpaceOddity1@test.com, 9a4ebfd6874beede7c319a5496e683e2, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3380313d]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3380313d]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3380313d]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3380313d]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@37596b44]
+JDBC Connection [HikariProxyConnection@1120843391 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: RainMaker00(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 83, RainMaker00, RainMaker00@test.com, b1e239490a24c5974b5a28d332cb64bc, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@37596b44]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@37596b44]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@37596b44]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@37596b44]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e1b1d22]
+JDBC Connection [HikariProxyConnection@1383478026 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: SnowPeak7(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 84, SnowPeak7, SnowPeak7@test.com, a3db1aafe5e7fc7035e4ae2da0b5469d, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e1b1d22]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e1b1d22]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e1b1d22]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e1b1d22]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@541d8a9e]
+JDBC Connection [HikariProxyConnection@852337468 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: SunShine333(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 85, SunShine333, SunShine333@test.com, fac534b220c10e9cf9de642fc7e00407, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@541d8a9e]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@541d8a9e]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@541d8a9e]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@541d8a9e]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63437af4]
+JDBC Connection [HikariProxyConnection@1820051628 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: StarDuster9(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 86, StarDuster9, StarDuster9@test.com, 4029e62bb4701581b517d9ed74869628, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63437af4]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63437af4]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63437af4]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63437af4]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d7f4cbb]
+JDBC Connection [HikariProxyConnection@1585430546 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: CloudDrifter55(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 87, CloudDrifter55, CloudDrifter55@test.com, a19a2b2b161781639f47a0e43379a920, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d7f4cbb]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d7f4cbb]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d7f4cbb]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d7f4cbb]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@445d4517]
+JDBC Connection [HikariProxyConnection@308002829 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: NightStalker6(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 88, NightStalker6, NightStalker6@test.com, 5c1365919365f4a2dfd0f126065a2991, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@445d4517]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@445d4517]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@445d4517]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@445d4517]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59bf79f3]
+JDBC Connection [HikariProxyConnection@15848947 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: DayBreaker2(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 89, DayBreaker2, DayBreaker2@test.com, 91f8d8748c4a8fce2d7d308e882978e2, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59bf79f3]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59bf79f3]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59bf79f3]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59bf79f3]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@726882da]
+JDBC Connection [HikariProxyConnection@31324669 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: WaveRider19(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 90, WaveRider19, WaveRider19@test.com, bd9c3331cd3593fa895492676827cb9c, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@726882da]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@726882da]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@726882da]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@726882da]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@37e15055]
+JDBC Connection [HikariProxyConnection@967701734 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: ForestSprite3(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 91, ForestSprite3, ForestSprite3@test.com, abd52eaae01c124f41c9d97735182864, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@37e15055]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@37e15055]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@37e15055]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@37e15055]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ef7145f]
+JDBC Connection [HikariProxyConnection@1087177468 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: RockSolid8(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 92, RockSolid8, RockSolid8@test.com, 0a2df63499ce66e9f130d09622123302, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ef7145f]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ef7145f]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ef7145f]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ef7145f]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9742012]
+JDBC Connection [HikariProxyConnection@973030433 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: IceShard44(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 93, IceShard44, IceShard44@test.com, 025c6f96973b73e55a7c83eca046249e, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9742012]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9742012]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9742012]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9742012]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5205b3e2]
+JDBC Connection [HikariProxyConnection@1805606351 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: FireBolt9(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 94, FireBolt9, FireBolt9@test.com, 3bfb7a13bedcd8af9945ce15037e2598, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5205b3e2]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5205b3e2]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5205b3e2]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5205b3e2]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2552cb80]
+JDBC Connection [HikariProxyConnection@182130143 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: WindWhisper18(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 95, WindWhisper18, WindWhisper18@test.com, dd78de356d3128228e296baf1ec4ad09, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2552cb80]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2552cb80]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2552cb80]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2552cb80]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c7876e1]
+JDBC Connection [HikariProxyConnection@1329040766 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: EarthMother7(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 96, EarthMother7, EarthMother7@test.com, 99d8d5094f5178e529ca0942be68aea6, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c7876e1]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c7876e1]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c7876e1]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c7876e1]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12922d53]
+JDBC Connection [HikariProxyConnection@2080890623 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: LightWizard6(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 97, LightWizard6, LightWizard6@test.com, 9cea47e39c92f445a26cd56915689cc9, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12922d53]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12922d53]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12922d53]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12922d53]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@664c0466]
+JDBC Connection [HikariProxyConnection@1827583378 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: DarkPrince22(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 98, DarkPrince22, DarkPrince22@test.com, 6ca0b5dac2efd6956fef33d8715b59e7, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@664c0466]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@664c0466]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@664c0466]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@664c0466]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35c69e6b]
+JDBC Connection [HikariProxyConnection@1631120910 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: SeaSerpent88(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 99, SeaSerpent88, SeaSerpent88@test.com, 553ee7f7758d1dbf94972f0947984b8f, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35c69e6b]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35c69e6b]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35c69e6b]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35c69e6b]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2df40273]
+JDBC Connection [HikariProxyConnection@1864933502 wrapping com.mysql.cj.jdbc.ConnectionImpl@7e615c6a] will be managed by Spring
+==>  Preparing: SELECT id, username, email, password, created_at, avatar, is_deleted, last_update FROM `tb_user` WHERE username = ?
+==> Parameters: MountainMaid4(String)
+<==    Columns: id, username, email, password, created_at, avatar, is_deleted, last_update
+<==        Row: 100, MountainMaid4, MountainMaid4@test.com, 7f0f0782db66b2492c49cff2f3202574, 2024-09-28 12:17:45, null, 0, 2024-09-28 12:17:45
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2df40273]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2df40273]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2df40273]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2df40273]
+]]></system-out>
+  </testcase>
+</testsuite>

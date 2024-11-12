@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.easyshare.dao.FollowDao">
+    <resultMap id="followMap" type="Follow">
+        <id property="id" column="id"/>
+        <result property="followerId" column="follower_id"/>
+        <result property="followeeId" column="followee_id"/>
+        <result property="lastUpdate" column="last_update"/>
+        <result property="isCancelled" column="is_cancelled"/>
+    </resultMap>
+
+    <resultMap id="followVoMap" type="FollowVo">
+        <id property="id" column="id" />
+        <result property="userId" column="user_id"/>
+        <result property="username" column="username"/>
+        <result property="avatar" column="avatar"/>
+        <result property="lastUpdate" column="last_update"/>
+    </resultMap>
+
+    <insert id="addFollow" parameterType="Follow" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO `tb_follow` (follower_id, followee_id, last_update)
+        VALUES (#{followerId}, #{followeeId}, #{lastUpdate});
+    </insert>
+
+    <select id="findFollow" resultMap="followMap">
+        SELECT id, follower_id, followee_id, last_update, is_cancelled
+        FROM `tb_follow`
+        <where>
+            <if test="followId != null">
+                id = #{followId}
+            </if>
+            <if test="followerId != null">
+                follower_id = #{followerId}
+            </if>
+            <if test="followeeId != null">
+                AND followee_id = #{followeeId}
+            </if>
+        </where>
+    </select>
+
+    <select id="findAllFollowers" resultMap="followVoMap">
+        SELECT f.id id,
+        f.follower_id user_id,
+        u.username username,
+        u.avatar avatar,
+        f.last_update last_update
+        FROM `tb_follow` f
+        LEFT JOIN `tb_user` u ON f.follower_id = u.id
+        WHERE f.followee_id = #{userId}
+        AND f.is_cancelled = 0
+        <if test="lastId != null">
+            AND f.id &lt; #{lastId}
+        </if>
+        ORDER BY id DESC
+        <if test="pageSize != null">
+            LIMIT #{pageSize}
+        </if>
+    </select>
+
+    <select id="findAllFollowees" resultMap="followVoMap">
+        SELECT f.id          id,
+               f.followee_id user_id,
+               u.username    username,
+               u.avatar      avatar,
+               f.last_update last_update
+        FROM `tb_follow` f
+                 LEFT JOIN `tb_user` u ON f.followee_id = u.id
+        WHERE f.follower_id = #{userId}
+          AND f.is_cancelled = 0
+        <if test="lastId != null">
+            AND f.id &lt; #{lastId}
+        </if>
+        ORDER BY id DESC
+        <if test="pageSize != null">
+            LIMIT #{pageSize}
+        </if>
+    </select>
+
+    <update id="updateFollow">
+        UPDATE `tb_follow`
+        SET is_cancelled  = #{isCancelled},
+            last_update = #{lastUpdate}
+        WHERE follower_id = #{followerId}
+          AND followee_id = #{followeeId}
+    </update>
+</mapper>

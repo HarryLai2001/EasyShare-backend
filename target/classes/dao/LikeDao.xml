@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.easyshare.dao.LikeDao">
+    <resultMap id="likeMap" type="Like">
+        <id property="id" column="id" />
+        <result property="postId" column="post_id" />
+        <result property="userId" column="user_id" />
+        <result property="lastUpdate" column="last_update" />
+        <result property="isCancelled" column="is_cancelled" />
+    </resultMap>
+
+    <insert id="addLike" parameterType="Like" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO `tb_like` (post_id, user_id, last_update)
+        VALUES (#{postId}, #{userId}, #{lastUpdate});
+    </insert>
+
+    <select id="findLike" resultMap="likeMap">
+        SELECT id, post_id, user_id, is_cancelled, last_update
+        FROM `tb_like`
+        <where>
+            <if test="likeId != null">
+                id = #{likeId}
+            </if>
+            <if test="postId != null">
+                AND post_id = #{postId}
+            </if>
+            <if test="userId != null">
+                AND user_id = #{userId}
+            </if>
+        </where>
+    </select>
+
+    <update id="updateLike">
+        UPDATE `tb_like`
+        SET is_cancelled = #{isCancelled},
+            last_update  = #{lastUpdate}
+        WHERE post_id = #{postId}
+          AND user_id = #{userId}
+    </update>
+</mapper>
