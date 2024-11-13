@@ -7,8 +7,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/db_easyshare
-    username: root
-    password: lizehan2001
+    username: ********
+    password: *********
   data:
     # redis配置
     redis:
@@ -16,26 +16,26 @@ spring:
       port: 6379
     # mongodb配置
     mongodb:
-      uri: mongodb+srv://lizehan2001:lizehan2001@cluster0.gwj8v.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-      database: easyshare
+      uri: ***********************************
+      database: *****************
 
 # 生产环境配置
 #spring:
 #  datasource:
 #    driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://localhost:3306/db_easyshare
-#    username: root
-#    password: lizehan2001
+#    url: ****************
+#    username: ******************
+#    password: ***************
 #  data:
 #    # redis配置
 #    redis:
 #      host: localhost
 #      port: 6379
-#      password: 123456
+#      password: ********************
 #    # mongodb配置
 #    mongodb:
-#      uri: mongodb+srv://lizehan2001:lizehan2001@cluster0.q2fzr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-#      database: easyshare
+#      uri: *********************************************
+#      database: ******************************
 
 
 # mybatis配置
@@ -49,10 +49,10 @@ mybatis:
 #阿里云OSS配置信息
 aliyun:
   oss:
-    endpoint: oss-cn-beijing.aliyuncs.com
-    accessKeyId: LTAI5tDzYynhz19pbssL1HDz
-    accessKeySecret: O7NvntFvWnfyqSYaBFGr5v4orMOWd9
-    bucketName: lizehan
+    endpoint: ****************************
+    accessKeyId: ***************************
+    accessKeySecret: ***************************
+    bucketName: ********************
 
 # socketio配置
 socketio:
