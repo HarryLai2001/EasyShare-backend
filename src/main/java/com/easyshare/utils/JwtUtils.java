@@ -8,7 +8,7 @@ import java.util.Map;
 
 @Component
 public class JwtUtils {
-    private static String key = "Lizehan";
+    private static String key = *********************;
 
     public String genToken(Map<String, Object> claims) {
         return JWT.create()
